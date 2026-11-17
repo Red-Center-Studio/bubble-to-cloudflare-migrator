@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "nc-migrator": {
+      "url": "https://nc.redcenterstudio.com/mcp"
+    }
+  }
+}

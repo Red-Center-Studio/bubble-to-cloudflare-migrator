@@ -1,0 +1,34 @@
+{
+  "name": "bubble-to-cloudflare-migrator",
+  "displayName": "Bubble to Cloudflare Migrator",
+  "version": "0.4.0",
+  "description": "Move a Bubble® app's data, files, and full UI and backend into your own Cloudflare account with checks at every step. Free audit, plan, 3-page preview, and 1,000-record trial; passes from $39 USD.",
+  "author": {
+    "name": "Red Center Studio",
+    "url": "https://redcenterstudio.com"
+  },
+  "homepage": "https://redcenterstudio.com/products/no-code-migrator/",
+  "repository": "https://github.com/Red-Center-Studio/bubble-to-cloudflare-migrator",
+  "license": "MIT",
+  "keywords": [
+    "no-code",
+    "bubble",
+    "migration",
+    "cloudflare",
+    "workers",
+    "d1",
+    "r2",
+    "data-export"
+  ],
+  "privacyPolicyUrl": "https://redcenterstudio.com/privacy/",
+  "icon": ".claude-plugin/icon.png",
+  "userConfig": {
+    "nc_migrator_key": {
+      "type": "string",
+      "title": "Migrator API key (optional)",
+      "description": "Leave empty for the free audit, plan, 3-page preview, and 1,000-record trial. After buying a pass or credits at https://redcenterstudio.com/products/no-code-migrator/ paste your nc_ key here.",
+      "required": false,
+      "sensitive": true
+    }
+  }
+}

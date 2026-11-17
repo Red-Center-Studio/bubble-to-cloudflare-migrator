@@ -1,0 +1,30 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "bubble-to-cloudflare-migrator",
+  "displayName": "Bubble to Cloudflare Migrator",
+  "version": "0.4.0",
+  "description": "Move a Bubble® app's data, files, and full UI and backend into your own Cloudflare account with checks at every step. Free audit, plan, and 3-page preview.",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Audit my Bubble app and build a Cloudflare migration plan",
+    "Upload my .bubble export and preview 3 rebuilt pages on Cloudflare",
+    "Check my migrator account, free trial status, and pass options"
+  ],
+  "author": {
+    "name": "Red Center Studio",
+    "email": "hello@redcenterstudio.com",
+    "url": "https://redcenterstudio.com"
+  },
+  "homepage": "https://redcenterstudio.com/products/no-code-migrator/",
+  "repository": "https://github.com/Red-Center-Studio/bubble-to-cloudflare-migrator",
+  "license": "MIT",
+  "keywords": [
+    "no-code",
+    "bubble",
+    "migration",
+    "cloudflare",
+    "workers",
+    "d1",
+    "r2"
+  ]
+}
