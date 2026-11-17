@@ -53,10 +53,10 @@ All free tools (`nc_ping`, `nc_audit`, `nc_plan`, `nc_connect`, `nc_compile_plan
 
 ```bash
 /plugin marketplace add Red-Center-Studio/claude-plugins
-/plugin install bubble-to-cloudflare-migrator
+/plugin install nocode-migrator@red-center-studio
 ```
 
-Or connect the MCP server directly:
+Or load this standalone plugin directory directly with `claude --plugin-dir ./bubble-to-cloudflare-migrator`, or connect the MCP server directly:
 
 ```bash
 claude mcp add --transport http nc-migrator https://nc.redcenterstudio.com/mcp
