@@ -8,6 +8,14 @@ Move a Bubble® app's **data, files, backend logic, and frontend UI** into your 
 - **Terms**: https://redcenterstudio.com/terms/
 - **Support**: hello@redcenterstudio.com
 
+## Walkthrough & visual parity
+
+> [Watch the 50-second captioned walkthrough video (MP4)](docs/walkthrough.mp4) | [Download VTT captions](docs/walkthrough.vtt)
+
+[![Original Bubble app vs Migrated Cloudflare Workers comparison](docs/parity-comparison.png)](docs/walkthrough.mp4)
+
+Built for **never-worse-than-original** visual and functional parity: exact design tokens (`color_tokens`, `color_tokens_user`, `font_tokens`, `font_tokens_user`), Google Fonts typography, crisp icon mapping, zero 390px horizontal overflow, and theme-locked add-ons (`dark_mode`, `not_found_page`, `theme`, `admin_dashboard`).
+
 ## What this plugin does
 
 1. **Data Migrator (Data, Files, Users, Privacy Rules, Redirects)**: Audits your Bubble® schema and records (`nc_audit`, `nc_plan`), creates your D1 database (`nc_schema`), exports records into R2 (`nc_export`), upserts them into D1 (`nc_load`), copies media to R2 by content hash (`nc_files`), prepares passwordless/reset user identities (`nc_users`), compiles privacy rules into default-deny `policy.ts` guards (`nc_access`), maps legacy URLs to 301 redirects (`nc_redirects`), verifies counts/checksums/FKs/files (`nc_verify`), and guides DNS cutover without ever touching DNS (`nc_cutover`).
