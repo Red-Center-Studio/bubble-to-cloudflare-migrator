@@ -23,8 +23,13 @@ Built for **never-worse-than-original** visual and functional parity: exact desi
 
 ## Requirements
 
-- A Bubble® app (Data API access for live record migration; Bubble's **Starter plan or higher** is required by Bubble to export your `.bubble` app JSON from Settings -> General for full UI/workflow scoring and App Mover builds).
-- A Cloudflare account with API token permissions for D1 and R2 (plus Workers Scripts and Queues for full App Mover deployment). Tokens are typed **only** on the one-time 30-minute secure page created by `nc_connect`, never in chat.
+- A Bubble® app (Data API access for live record migration; Bubble's **Starter plan or higher** is required by Bubble to export your `.bubble` app JSON from Settings -> General for full UI/workflow scoring and App Mover builds). Both `https://your-app.bubbleapps.io` / custom domains and full Bubble Editor URLs (`https://bubble.io/page?id=your-app...`) work, and `.bubble` exports up to **500 MB** stream directly with secrets stripped in transit.
+- A Cloudflare account with API token permissions for D1 and R2 (plus Workers Scripts and Queues for full App Mover deployment). Tokens are typed **only** on the one-time secure page created by `nc_connect`, never in chat.
+  1. Open **Cloudflare Dashboard -> R2 Object Storage** (enable R2 if prompted; first 10 GB/month is free).
+  2. Click **Create bucket**, enter a lowercase name (letters, digits, hyphens), leave Location **Automatic** and Storage Class **Standard**, and click **Create bucket**.
+  3. Return to **R2 Object Storage -> Overview**, click **Manage R2 API Tokens**, then **Create User API token** (or **Create Account API token**).
+  4. Select **Object Read & Write** permissions, restrict to **Apply to specific buckets only** for your new bucket, and click **Create API Token**.
+  5. Scroll past the `cfat_` Token value to **Use the following credentials for S3 clients** and copy the **Access Key ID** (32 chars) and **Secret Access Key** (64 chars) into the secure `/connect` page.
 
 ## Installation & API key setup
 
