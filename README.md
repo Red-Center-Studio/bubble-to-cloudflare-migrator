@@ -21,7 +21,7 @@ Built for **never-worse-than-original** visual and functional parity: exact desi
 ## What this plugin does
 
 1. **Data Migrator (Data, Files, Users, Privacy Rules, Redirects)**: Audits your Bubble® schema and records (`nc_audit`, `nc_plan`), creates your D1 database (`nc_schema`), exports records into R2 (`nc_export`), upserts them into D1 (`nc_load`), copies media to R2 by content hash (`nc_files`), prepares passwordless/reset user identities (`nc_users`), compiles privacy rules into default-deny `policy.ts` guards (`nc_access`), maps legacy URLs to 301 redirects (`nc_redirects`), verifies counts/checksums/FKs/files (`nc_verify`), and guides DNS cutover without ever touching DNS (`nc_cutover`).
-2. **App Mover (Full Code Rebuild & Deploy)**: Scores a `.bubble` export (`nc_compile_plan`), lets you queue cleanups (`nc_changes`) and modular add-ons (`nc_basket`), builds a **free full-site interactive preview** (up to 80 pages via `nc_preview`, `nc_preview_status`), quotes the full build (`nc_finalise_quote`), and compiles + deploys the full Hono + Drizzle + React Worker into your Cloudflare account (`nc_move`).
+2. **App Mover (Full Code Rebuild & Deploy)**: Scores a `.bubble` export (`nc_compile_plan`), lets you queue cleanups (`nc_changes`) and modular add-ons (`nc_basket`), builds a **free interactive preview of up to 10 core pages** (via `nc_preview`, `nc_preview_status`), quotes the full build (`nc_finalise_quote`), and compiles + deploys the full Hono + Drizzle + React Worker into your Cloudflare account (`nc_move`).
 
 ## Requirements
 
@@ -35,7 +35,7 @@ Built for **never-worse-than-original** visual and functional parity: exact desi
 
 ## Installation & API key setup
 
-All free tools (`nc_ping`, `nc_audit`, `nc_plan`, `nc_connect`, `nc_compile_plan`, `nc_changes`, `nc_basket`, `nc_finalise_quote`, `nc_preview`, `nc_preview_status`, `nc_forget`), the free full-site preview (up to 80 pages), and the 1,000-record data trial work **without an API key**.
+All free tools (`nc_ping`, `nc_audit`, `nc_plan`, `nc_connect`, `nc_compile_plan`, `nc_changes`, `nc_basket`, `nc_finalise_quote`, `nc_preview`, `nc_preview_status`, `nc_forget`), the free 10-page preview, and the 1,000-record data trial work **without an API key**.
 
 ### Antigravity
 
@@ -77,7 +77,7 @@ Or load this standalone plugin directory directly with `claude --plugin-dir ./bu
 claude mcp add --transport http nc-migrator https://nc.redcenterstudio.com/mcp
 ```
 
-Leave the optional `Migrator API key` (`nc_migrator_key`) blank for free discovery, the full-site preview, and the 1,000-record trial.
+Leave the optional `Migrator API key` (`nc_migrator_key`) blank for free discovery, the 10-page preview, and the 1,000-record trial.
 
 ## Bundled skills
 
@@ -98,7 +98,7 @@ Leave the optional `Migrator API key` (`nc_migrator_key`) blank for free discove
 | `nc_changes` | Free (no key) | Queue structured schema, privacy, workflow, or page changes |
 | `nc_basket` | Free (no key) | Select and price modular add-ons |
 | `nc_finalise_quote` | Free (no key) | Compute itemized USD quote before paying |
-| `nc_preview` | Free (no key) | Build a free full-site interactive live preview (up to 80 pages) on Cloudflare |
+| `nc_preview` | Free (no key) | Build a free interactive live preview of up to 10 core pages on Cloudflare |
 | `nc_preview_status` | Free (no key) | Poll preview build progress and retrieve the signed preview URL |
 | `nc_forget` | Free (no key) | Immediately delete uploaded `.bubble` export and temporary build artifacts |
 | `nc_schema` | Trial / Pass | Generate D1 SQL migrations + Drizzle schema; optionally apply to D1 |
@@ -114,9 +114,9 @@ Leave the optional `Migrator API key` (`nc_migrator_key`) blank for free discove
 
 ## Pricing (USD)
 
-- **Free (no key)**: `nc_ping`, `nc_account`, `nc_connect`, `nc_audit`, `nc_plan`, `nc_compile_plan`, `nc_changes`, `nc_basket`, `nc_finalise_quote`, **full-site live preview (up to 80 pages)** (`nc_preview`), and **1,000-record / 250 MB data trial** (7 days, once per app).
+- **Free (no key)**: `nc_ping`, `nc_account`, `nc_connect`, `nc_audit`, `nc_plan`, `nc_compile_plan`, `nc_changes`, `nc_basket`, `nc_finalise_quote`, **live preview of up to 10 core pages** (`nc_preview`), and **1,000-record / 250 MB data trial** (7 days, once per app).
 - **Data Migrator passes (30 days per app)**: Starter `$39 USD` (up to 10,000 records, 1 GB files), Migration `$69 USD` (up to 100,000 records, 5 GB files), Large `$199 USD` (up to 500,000 records, 50 GB files).
-- **App Mover finalise (includes matching data pass + 2 rebuild rounds + 30-day fix window)**: Small `$129 USD` (up to 10 pages), Standard `$249 USD` (up to 30 pages), Large `$289 USD` (up to 80 pages), Developer mode `$45 USD`, Done-for-you from `$499 USD`. Extra apps finalised within 12 months receive 20% off capped at estimated build cost.
+- **App Mover finalise (includes matching data pass + 2 rebuild rounds + 30-day fix window)**: Small `$129 USD` (up to 10 pages), Standard `$249 USD` (up to 30 pages), Large `$289 USD` (up to 80 pages; 81 to 250 pages add `$3 USD` per page over 80; more than 250 pages is a custom quote; USD only), Developer mode `$45 USD`, Done-for-you from `$499 USD`. Extra apps finalised within 12 months receive 20% off capped at estimated build cost.
 - **Credit packs**: `$25 USD`, `$100 USD` (adds `$110` credits), `$300 USD` (adds `$360` credits). Only built and automatically verified items are charged; failed checks refund automatically.
 
 ## Security & privacy

@@ -3,11 +3,11 @@
   "name": "bubble-to-cloudflare-migrator",
   "displayName": "Bubble to Cloudflare Migrator",
   "version": "0.4.0",
-  "description": "Move a Bubble® app's data, files, and full UI and backend into your own Cloudflare account with checks at every step. Free audit, plan, and 3-page preview.",
+  "description": "Move a Bubble® app's data, files, and full UI and backend into your own Cloudflare account with checks at every step. Free audit, plan, and 10-page preview (core pages first).",
   "logo": "assets/logo.svg",
   "suggestedPrompts": [
     "Audit my Bubble app and build a Cloudflare migration plan",
-    "Upload my .bubble export and preview 3 rebuilt pages on Cloudflare",
+    "Upload my .bubble export and preview up to 10 rebuilt pages on Cloudflare",
     "Check my migrator account, free trial status, and pass options"
   ],
   "author": {
