@@ -15,8 +15,8 @@ Requires uploading the app's `.bubble` export via `nc_connect(purpose: "export")
    - Call `nc_compile_plan` to review the move score, page list, and automatic vs manual features.
    - Optional `nc_changes`: queue pre-build modifications to data model fields, privacy rules, backend workflows, or pages (for example renaming fields, tightening rules, or adding routes).
    - Optional `nc_basket`: inspect or select modular add-ons (such as `admin_dashboard`, `web_analytics`, `marketing_hub`, `payments`, `bookings`, `referrals`, `ai_assistant`, `claude_connector`, `weekly_backup`, or micro UI add-ons like `theme`, `speed_search`, `accessibility`, `dark_mode`, `cookie_banner`). Only built add-ons can be charged.
-2. **Free 3-page live preview (`nc_preview` + `nc_preview_status`)**:
-   - Call `nc_preview` with `job_id` (and up to 3 page keys or defaults) to rebuild and deploy a free 3-page interactive preview link before any purchase.
+2. **Free full-site live preview (`nc_preview` + `nc_preview_status`)**:
+   - Call `nc_preview` with `job_id` (and up to 80 page keys or defaults) to rebuild and deploy a free full-site interactive preview link before any purchase.
    - Poll with `nc_preview_status` until the build completes and share the signed preview URL with the owner.
 3. **Quote & guided full move (`nc_finalise_quote` -> `nc_move`)**:
    - Call `nc_finalise_quote` to compute the exact itemized quote (finalise tier `$129` Small / `$249` Standard / `$289` Large or `$45` Developer mode, plus selected built add-ons and any extra-app discount; includes the matching data migration pass and 2 rebuild rounds).
